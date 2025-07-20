@@ -7,7 +7,6 @@ const Navbar = () => {
 
     const navItems = [
         { path: "/wordverse", link: "Home" },
-        { path: "/wordverse/services", link: "Services" },
         { path: "/wordverse/about", link: "About" },
         { path: "/wordverse/blogs", link: "Blogs" },
         { path: "/wordverse/contact", link: "Contact" }
