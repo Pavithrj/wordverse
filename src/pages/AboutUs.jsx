@@ -5,7 +5,6 @@ import CoreValues from '../components/aboutUs/CoreValues';
 import MeetTheCreator from '../components/aboutUs/MeetTheCreator';
 import PlatformStats from '../components/aboutUs/PlatformStats';
 import ContactCTA from '../components/aboutUs/ContactCTA';
-import Footer from '../components/Footer';
 
 const AboutUs = () => {
     return (
@@ -23,10 +22,8 @@ const AboutUs = () => {
             <PlatformStats />
 
             <ContactCTA />
-
-            <Footer />
         </>
-    )
+    );
 };
 
 export default AboutUs;
