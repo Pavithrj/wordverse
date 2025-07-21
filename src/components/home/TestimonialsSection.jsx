@@ -1,4 +1,4 @@
-import Testimonials from "../../data/Testimonials";
+import Testimonials from '../../data/Testimonials';
 
 const TestimonialsSection = () => {
     return (
