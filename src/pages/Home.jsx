@@ -4,7 +4,6 @@ import TestimonialsSection from '../components/home/TestimonialsSection';
 import SubscribeSection from '../components/home/SubscribeSection';
 import WhyWordVerse from '../components/home/WhyWordVerse';
 import CallToAction from '../components/home/CallToAction';
-import Footer from '../components/Footer';
 
 const Home = () => {
     return (
@@ -20,8 +19,6 @@ const Home = () => {
             <WhyWordVerse />
 
             <CallToAction />
-
-            <Footer />
         </main>
     )
 };
