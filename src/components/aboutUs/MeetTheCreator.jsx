@@ -7,6 +7,7 @@ const MeetTheCreator = () => (
 
         <div className="flex flex-col items-center max-w-3xl mx-auto text-center">
             <img src="/path/to/your-avatar.jpg" alt="Creator" className="object-cover w-32 h-32 mb-4 rounded-full" />
+
             <h3 className="text-xl font-semibold">
                 Pavithr Jain
             </h3>
