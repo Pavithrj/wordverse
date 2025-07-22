@@ -11,7 +11,7 @@ const BlogList = ({ blogs }) => {
                 <BlogCard key={index} blog={blog} />
             ))}
         </div>
-    );
+    )
 };
 
 export default BlogList;
