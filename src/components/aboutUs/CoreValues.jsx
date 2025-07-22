@@ -13,14 +13,14 @@ const CoreValues = () => (
         </h2>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
-            {values.map((val, idx) => (
-                <div key={idx} className="p-6 text-center bg-white rounded-lg shadow">
+            {values.map((value, index) => (
+                <div key={index} className="p-6 text-center bg-white rounded-lg shadow">
                     <h3 className="mb-2 text-xl font-semibold">
-                        {val.title}
+                        {value.title}
                     </h3>
 
                     <p className="text-sm text-gray-600">
-                        {val.description}
+                        {value.description}
                     </p>
                 </div>
             ))}
