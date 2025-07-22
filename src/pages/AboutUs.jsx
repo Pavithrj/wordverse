@@ -23,7 +23,7 @@ const AboutUs = () => {
 
             <ContactCTA />
         </>
-    );
+    )
 };
 
 export default AboutUs;
