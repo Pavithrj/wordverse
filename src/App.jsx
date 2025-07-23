@@ -13,11 +13,11 @@ const BlogDetail = lazy(() => import('./pages/BlogDetail'));
 const ContactUs = lazy(() => import('./pages/ContactUs'));
 
 const routes = [
-    { path: '/wordverse', element: <Home /> },
-    { path: '/wordverse/about', element: <AboutUs /> },
-    { path: '/wordverse/blogs', element: <Blogs /> },
-    { path: '/wordverse/blogs/:slug', element: <BlogDetail /> },
-    { path: '/wordverse/contact', element: <ContactUs /> }
+    { path: "/wordverse", element: <Home /> },
+    { path: "/wordverse/about", element: <AboutUs /> },
+    { path: "/wordverse/blogs", element: <Blogs /> },
+    { path: "/wordverse/blogs/:slug", element: <BlogDetail /> },
+    { path: "/wordverse/contact", element: <ContactUs /> }
 ];
 
 function App() {
