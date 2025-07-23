@@ -62,9 +62,9 @@ const RecentBlogs = () => {
         };
 
         updateVisibleBlogs();
-        window.addEventListener('resize', updateVisibleBlogs);
+        window.addEventListener("resize", updateVisibleBlogs);
 
-        return () => window.removeEventListener('resize', updateVisibleBlogs);
+        return () => window.removeEventListener("resize", updateVisibleBlogs);
     }, []);
 
     return (
