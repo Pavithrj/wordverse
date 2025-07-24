@@ -1,5 +1,6 @@
 import { lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -28,8 +29,8 @@ function App() {
 
                 <main className="flex-grow">
                     <Routes>
-                        {routes.map(({ index, path, element }) => (
-                            <Route key={index} path={path} element={element} />
+                        {routes.map(({ path, element }) => (
+                            <Route key={path} path={path} element={element} />
                         ))}
 
                         <Route path="*" element={<NotFound />} />
@@ -38,6 +39,8 @@ function App() {
 
                 <Footer />
             </div>
+
+            <Toaster position="top-right" reverseOrder={false} />
         </Router>
     )
 };
