@@ -16,7 +16,7 @@ const SubscribeSection = () => {
     return (
         <section className="px-6 py-16 text-black bg-orange-50">
             <div className="max-w-xl mx-auto text-center">
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-bold text-center text-black sm:text-3xl">
                     Stay Inspired
                 </h2>
 
