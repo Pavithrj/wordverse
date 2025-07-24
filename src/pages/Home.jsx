@@ -7,7 +7,7 @@ import CallToAction from '../components/home/CallToAction';
 
 const Home = () => {
     return (
-        <main>
+        <>
             <HeroSection />
 
             <RecentBlogs />
@@ -19,7 +19,7 @@ const Home = () => {
             <WhyWordVerse />
 
             <CallToAction />
-        </main>
+        </>
     )
 };
 
