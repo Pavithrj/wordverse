@@ -22,7 +22,7 @@ const Navbar = () => {
     }, [isOpen]);
 
     return (
-        <header className="sticky top-0 z-50 text-white bg-black shadow-md">
+        <div className="sticky top-0 z-50 text-white bg-black shadow-md">
             <nav className="flex items-center justify-between px-6 py-4 mx-auto max-w-7xl">
                 <NavLink to="/wordverse" className="text-2xl font-extrabold">
                     <span className="text-white">
@@ -62,7 +62,7 @@ const Navbar = () => {
                     ))}
                 </ul>
             </div>
-        </header>
+        </div>
     )
 };
 
