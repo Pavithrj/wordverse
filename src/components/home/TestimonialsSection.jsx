@@ -3,12 +3,12 @@ import Testimonials from '../../data/Testimonials';
 const TestimonialsSection = () => {
     return (
         <section className="px-6 py-16 text-black bg-gray-50">
-            <div className="max-w-5xl mx-auto text-center">
-                <h2 className="mb-10 text-2xl font-bold">
+            <div className="max-w-5xl mx-auto text-center flex flex-col gap-4">
+                <h2 className="text-2xl font-bold text-center text-black sm:text-3xl">
                     What Our Readers Say
                 </h2>
 
-                <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+                <div className="grid gap-4 md:gap-8 sm:grid-cols-2 md:grid-cols-3">
                     {Testimonials.map(({ name, quote, role, image }, index) => (
                         <div key={index} className="p-6 transition duration-300 bg-white shadow-md rounded-xl hover:shadow-lg">
                             {image &&
