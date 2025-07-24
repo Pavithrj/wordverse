@@ -9,7 +9,7 @@ const BlogSearch = ({ onSearch }) => {
 
     return (
         <div className="flex gap-2 my-6">
-            <input type="text" placeholder="Search blogs..." value={query} onChange={(e) => setQuery(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md" />
+            <input type="text" id="blog-search" name="search" placeholder="Search blogs..." value={query} onChange={(e) => setQuery(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md" autoComplete="on" />
 
             <button onClick={handleSearch} className="px-4 py-2 text-white transition bg-indigo-600 rounded-md hover:bg-indigo-700">
                 Search
