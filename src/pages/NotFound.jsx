@@ -4,11 +4,11 @@ const NotFound = () => {
     return (
         <div className="flex items-center justify-center min-h-[70vh] bg-gray-100 px-4">
             <div className="text-center animate-fadeIn">
-                <h1 className="mb-4 text-6xl font-bold text-gray-800">
+                <h1 className="text-6xl font-bold text-gray-800 mb-4">
                     404
                 </h1>
 
-                <p className="mb-6 text-gray-600 text-md xl:text-xl">
+                <p className="text-md xl:text-xl text-gray-600 mb-6">
                     Oops! The page you're looking for doesn't exist.
                 </p>
 
