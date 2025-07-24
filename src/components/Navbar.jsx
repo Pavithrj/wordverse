@@ -37,7 +37,12 @@ const Navbar = () => {
                 <ul className="hidden gap-10 text-lg font-medium md:flex">
                     {navItems.map(({ path = "/", link = "Link" }) => (
                         <li key={path}>
-                            <NavLink to={path} end={path === "/wordverse"} className={({ isActive }) => linkClasses(isActive)}>
+                            <NavLink to={path} end={path === "/wordverse"} className={({ isActive }) => linkClasses(isActive)}
+                                onClick={() => {
+                                    setIsOpen(false);
+                                    window.scrollTo({ top: 0, behavior: "smooth" });
+                                }}
+                            >
                                 {link}
                             </NavLink>
                         </li>
@@ -55,7 +60,12 @@ const Navbar = () => {
                 <ul className="flex flex-col gap-4 px-6 pb-4 text-lg font-medium bg-black">
                     {navItems.map(({ path = "/", link = "Link" }) => (
                         <li key={path}>
-                            <NavLink to={path} end={path === "/wordverse"} onClick={() => setIsOpen(false)} className={({ isActive }) => linkClasses(isActive) + " block py-1"}>
+                            <NavLink to={path} end={path === "/wordverse"} className={({ isActive }) => linkClasses(isActive) + " block py-1"}
+                                onClick={() => {
+                                    setIsOpen(false);
+                                    window.scrollTo({ top: 0, behavior: "smooth" });
+                                }}
+                            >
                                 {link}
                             </NavLink>
                         </li>
