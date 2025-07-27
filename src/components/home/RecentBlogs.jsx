@@ -68,7 +68,7 @@ const RecentBlogs = () => {
     }, []);
 
     return (
-        <section className="px-6 py-12 bg-gray-100">
+        <section id="recent-blogs" className="px-6 py-12 bg-gray-100">
             <div className="flex flex-col items-center justify-center gap-8 mx-auto max-w-7xl">
                 <h2 className="text-2xl font-bold text-center text-black sm:text-3xl">
                     Recent Blogs
@@ -76,12 +76,14 @@ const RecentBlogs = () => {
 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {sampleBlogs.slice(0, visibleBlogs).map((blog, index) => (
-                        <BlogCard key={index} {...blog} />
+                        <article key={index}>
+                            <BlogCard {...blog} />
+                        </article>
                     ))}
                 </div>
 
                 {showButton &&
-                    <Link to="/wordverse/blogs" className="px-6 py-3 mx-auto text-white transition duration-300 bg-orange-500 shadow w-fit rounded-xl hover:bg-orange-600">
+                    <Link to="/wordverse/blogs" aria-label="View all blog posts" className="px-6 py-3 mx-auto text-white transition duration-300 bg-orange-500 shadow w-fit rounded-xl hover:bg-orange-600">
                         View All Blogs
                     </Link>
                 }
