@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const truncateText = (text = "", limit = 100) => {
     return text.length > limit ? text.slice(0, limit).trim() + "..." : text;
