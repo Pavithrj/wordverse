@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const ContactUs = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
     const handleChange = (e) => {
         setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -10,8 +10,8 @@ const ContactUs = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
-        alert('Thank you for reaching out!');
-        setFormData({ name: '', email: '', message: '' });
+        alert("Thank you for reaching out!");
+        setFormData({ name: "", email: "", message: "" });
     };
 
     return (
@@ -27,7 +27,7 @@ const ContactUs = () => {
                     </h2>
 
                     <p className="text-gray-600 text-sm mb-6 text-center">
-                        We'd love to hear from you! Fill out the form and we’ll get back to you shortly.
+                        We&#39;d love to hear from you! Fill out the form and we’ll get back to you shortly.
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-5">
