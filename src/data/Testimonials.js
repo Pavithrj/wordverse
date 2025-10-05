@@ -1,4 +1,4 @@
-import Car from './../assets/car.jpg';
+import Car from './../assets/blogs/car.jpg';
 
 const Testimonials = [
     {
