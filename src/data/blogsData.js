@@ -1,5 +1,4 @@
-// import Blog1 from '../assets/blog1.jpg';
-import Car from './../assets/car.jpg';
+import Car from './../assets/blogs/car.jpg';
 
 const blogsData = [
     {
@@ -7,7 +6,6 @@ const blogsData = [
         slug: "power-of-consistent-writing",
         author: "Jane Doe",
         date: "July 10, 2025",
-        // image: Blog1,
         image: Car,
         excerpt: "Consistency in writing builds credibility, audience trust, and helps sharpen your voice as a creator...",
         content: "Full content goes here..."
