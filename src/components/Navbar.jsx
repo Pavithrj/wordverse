@@ -18,6 +18,11 @@ const Navbar = () => {
 
     useEffect(() => {
         setIsOpen(false);
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     }, [location.pathname]);
 
     return (
