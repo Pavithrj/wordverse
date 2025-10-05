@@ -1,3 +1,4 @@
+import Creator from './../../assets/aboutUs/creator.png';
 
 const MeetTheCreator = () => (
     <section className="px-6 py-16 bg-gray-50">
@@ -6,7 +7,7 @@ const MeetTheCreator = () => (
         </h2>
 
         <div className="flex flex-col items-center max-w-3xl mx-auto text-center">
-            <img src="/path/to/your-avatar.jpg" alt="Creator" className="object-cover w-32 h-32 mb-4 rounded-full" />
+            <img src={Creator} alt="Creator" className="object-cover w-32 h-32 mb-4 rounded-full" />
 
             <h3 className="text-xl font-semibold">
                 Pavithr Jain
@@ -17,7 +18,7 @@ const MeetTheCreator = () => (
             </p>
 
             <p className="text-gray-700">
-                I'm passionate about building web experiences that empower people. WordVerse is a personal project that grew into something meaningful — thank you for being part of the journey!
+                I&#39;m passionate about building web experiences that empower people. WordVerse is a personal project that grew into something meaningful — thank you for being part of the journey!
             </p>
         </div>
     </section>
