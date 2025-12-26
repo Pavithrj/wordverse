@@ -6,8 +6,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
-import NotFound from './pages/NotFound';
-
 const Home = lazy(() => import('./pages/Home'));
 const AboutUs = lazy(() => import('./pages/AboutUs'));
 const Blogs = lazy(() => import('./pages/Blogs'));
@@ -27,21 +25,15 @@ function App() {
         <Router>
             <ScrollToTop />
 
-            <div className="flex flex-col min-h-screen">
-                <Navbar />
+            <Navbar />
 
-                <main className="flex-grow">
-                    <Routes>
-                        {routes.map(({ path, element }) => (
-                            <Route key={path} path={path} element={element} />
-                        ))}
+            <Routes>
+                {routes.map(({ path, element }) => (
+                    <Route key={path} path={path} element={element} />
+                ))}
+            </Routes>
 
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
-                </main>
-
-                <Footer />
-            </div>
+            <Footer />
 
             <Toaster position="top-right" reverseOrder={false} />
         </Router>
