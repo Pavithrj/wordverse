@@ -8,7 +8,7 @@ import ContactCTA from '../components/aboutUs/ContactCTA';
 
 const AboutUs = () => {
     return (
-        <>
+        <main>
             <AboutUsHero />
 
             <OurStory />
@@ -22,7 +22,7 @@ const AboutUs = () => {
             <PlatformStats />
 
             <ContactCTA />
-        </>
+        </main>
     )
 };
 
