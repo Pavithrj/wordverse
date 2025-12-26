@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
     return (
-        <section className="px-6 py-16 text-center text-white bg-black">
+        <section className="px-6 py-16 text-center text-gray-800 bg-orange-50">
             <h2 className="text-2xl font-bold text-center sm:text-3xl">
                 Ready to Dive into Stories that Matter?
             </h2>
