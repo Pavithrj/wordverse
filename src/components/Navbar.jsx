@@ -2,13 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
-const navItems = [
-    { path: "/wordverse", link: "Home" },
-    { path: "/wordverse/about", link: "About" },
-    { path: "/wordverse/blogs", link: "Blogs" },
-    { path: "/wordverse/contact", link: "Contact" },
-];
-
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const navRef = useRef(null);
@@ -16,13 +9,17 @@ const Navbar = () => {
 
     const linkClasses = (isActive) => `transition duration-300 hover:text-orange-500 ${isActive ? "text-orange-500 underline underline-offset-4" : ""}`;
 
+    const navItems = [
+        { path: "/wordverse", link: "Home" },
+        { path: "/wordverse/about", link: "About" },
+        { path: "/wordverse/blogs", link: "Blogs" },
+        { path: "/wordverse/contact", link: "Contact" },
+    ];
+
     useEffect(() => {
         setIsOpen(false);
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }, [location.pathname]);
 
     return (
