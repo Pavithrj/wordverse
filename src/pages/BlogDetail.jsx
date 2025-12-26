@@ -7,7 +7,7 @@ const BlogDetail = () => {
 
     if (!blog) {
         return (
-            <div className="mt-20 text-center">
+            <main className="mt-20 text-center">
                 <h2 className="text-2xl font-bold">
                     Blog not found
                 </h2>
@@ -15,12 +15,12 @@ const BlogDetail = () => {
                 <Link to="/wordverse/blogs" className="inline-block mt-4 text-indigo-600 underline">
                     ← Back to Blogs
                 </Link>
-            </div>
+            </main>
         )
     };
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-gray-50">
             <div className="max-w-3xl px-4 py-10 mx-auto">
                 <h1 className="mb-4 text-4xl font-bold">
                     {blog.title}
