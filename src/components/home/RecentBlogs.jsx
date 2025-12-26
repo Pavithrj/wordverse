@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import BlogCard from '../BlogCard';
 
 const sampleBlogs = [
     {
@@ -76,8 +75,22 @@ const RecentBlogs = () => {
 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {sampleBlogs.slice(0, visibleBlogs).map((blog, index) => (
-                        <article key={index}>
-                            <BlogCard {...blog} />
+                        <article key={index} className="p-6 text-black transition duration-300 bg-white shadow rounded-xl hover:shadow-lg">
+                            <h2 className="text-lg font-semibold sm:text-xl">
+                                {blog.title}
+                            </h2>
+
+                            <p className="mt-1 text-xs text-gray-500 sm:text-sm">
+                                By {blog.author} • {blog.date}
+                            </p>
+
+                            <p className="mt-3 text-gray-700">
+                                {blog.excerpt}
+                            </p>
+
+                            <a className="inline-block mt-4 font-medium text-orange-500 hover:underline" href="/wordverse/blogs/undefined" data-discover="true">
+                                Read More →
+                            </a>
                         </article>
                     ))}
                 </div>
