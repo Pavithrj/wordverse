@@ -1,1 +1,0 @@
-import{C as e}from"./car-C67b5mrZ.js";const o=[{title:"The Power of Consistent Writing",slug:"power-of-consistent-writing",author:"Jane Doe",date:"July 10, 2025",image:e,excerpt:"Consistency in writing builds credibility, audience trust, and helps sharpen your voice as a creator...",content:"Full content goes here..."}];export{o as b};
